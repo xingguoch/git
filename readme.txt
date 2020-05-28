@@ -49,6 +49,15 @@ git checkout -- “把删除的工作区文件还原到最新版本”
 git clone “仓库地址”
 git支持多个协议。https 、ssh，ssh要比https协议速度快
 
+创建与合并分支
+master分支时一条线，git用master指向最新的提交，再用HEAD指向master，就能确定当前分支，以及当前分支的提交点
+（HEAD指向当前的分支）
+
+创建分支：git checkout -b dev 等同于 git branch dev 与 git checkout dev
+合并分支：合并dev分支就是将master指向dev当前的提交，完成合并
+
+
+
 
 
 
