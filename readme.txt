@@ -40,6 +40,10 @@ git checkout -- “把删除的工作区文件还原到最新版本”
     如果不想让别人看到你的内容可以设置私有仓库、或是搭建私有github服务器
 
 添加远程仓库
+1、git remote add origin git@github.cm:用户名/仓库名.git  在github仓库创建一仓库，并与本地仓库连接
+2、git push -u origin master 将本地仓库内容推送到远程，实际上就是把当前的master主分支推送到远程
+     因为远程仓库时空的，我们第一次推送master分支时，加上-u参数，这样本地的master分支与远程的master关联玩起来，
+     现在如果要本地提交的话，使用 git push origin master 就可以了。
 
 
 
