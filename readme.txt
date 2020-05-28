@@ -55,10 +55,7 @@ master分支时一条线，git用master指向最新的提交，再用HEAD指向m
 
 创建分支：git checkout -b dev 等同于 git branch dev 与 git checkout dev
 
-合并分支：合并dev分支就是将master指向dev当前的提交，并完成合并
-
-
-
+合并分支：合并dev分支就是将master指向dev当前的提交，完成合并
 
 
 
