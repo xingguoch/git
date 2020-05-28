@@ -45,6 +45,11 @@ git checkout -- “把删除的工作区文件还原到最新版本”
      因为远程仓库时空的，我们第一次推送master分支时，加上-u参数，这样本地的master分支与远程的master关联玩起来，
      现在如果要本地提交的话，使用 git push origin master 就可以了。
 
+从远程库克隆
+git clone “仓库地址”
+git支持多个协议。https 、ssh，ssh要比https协议速度快
+
+
 
 
 
