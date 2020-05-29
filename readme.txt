@@ -56,6 +56,7 @@ master分支时一条线，git用master指向最新的提交，再用HEAD指向m
 创建分支：git checkout -b dev 等同于 git branch dev 与 git checkout dev
 
 合并分支：合并dev分支就是将master指向dev当前的提交，完成合并
+合并分支到master，切回master分支，执行命令：git merge --no-ff -m "合并dev" dev
 
 解决冲突：
 我们可以通过git status查看冲突的文件，进入文件查看 :
@@ -80,16 +81,7 @@ bug分支：
 1、git status 查看工作状态，发现工作进行到一半，还不能提交。
 2、git stash 可以把当前的工作储藏起来。等bug修复完成后再继续未完成工作
 3、git checkout master 切换到master分支
-4、git checkout -b “临时分支” 创建临时分支
-5、
-
-
-
-
-
-
-
-
-
-
+4、git checkout -b “临时分支” 创建临时分支，在临时分支上进行bug修复，并切回master合并到master；
+5、切回dev上，找回之前dev分支上内容：git stash pop 或是多次使用：git stash list ---->git stash apply stash@{0} 
+6、dev分支上也需要bug修复，切到dev分支，执行命令：git cherry-pick "临时分支码(ab43722) "，就不用手动修复dev分支bug
  
