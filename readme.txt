@@ -69,6 +69,16 @@ master分支时一条线，git用master指向最新的提交，再用HEAD指向m
 master分支应该是非常稳定的，也就是仅用来发布新版本，平时不能在上面干活。所以我们都在dev分支上开发，
 并将代码跟新到dev上
 
+bug分支：
+当我们遇到bug时，我们可以通过创建一个新的临时分支修补bug，修复后，合并分支，然后删除临时分支。
+当发现master分支上有bug，但dev上工作正在进行还没有提交：
+1、git status 查看工作状态，发现工作进行到一半，还不能提交。
+2、git stash 可以把当前的工作储藏起来。等bug修复完成后再继续未完成工作
+3、git checkout master 切换到master分支
+4、git checkout -b “临时分支” 创建临时分支
+5、
+
+
 
 
 
