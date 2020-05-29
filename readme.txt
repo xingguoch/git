@@ -85,3 +85,23 @@ bug分支：
 5、切回dev上，找回之前dev分支上内容：git stash pop 或是多次使用：git stash list ---->git stash apply stash@{0} 
 6、dev分支上也需要bug修复，切到dev分支，执行命令：git cherry-pick "临时分支码(ab43722) "，就不用手动修复dev分支bug
  
+
+feature分支：
+1、如果需要添加一个新功能，我们可以创建一个新分支，在新分支上开发，完成后，合并，最后删除新分支
+2、如果想要丢弃没有合并的分支，可以通过git branch -D <新分支> 强行删除
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
